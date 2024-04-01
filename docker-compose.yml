@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  app:
+    container_name: lowcode-general-py-web
+    image: luoyunxiao/lowcode-general-py-web:latest
+    ports:
+      - "8000:8000"
+    network_mode: bridge
+    #配置代理
+    # environment:
+    #   - https_proxy=http://10.0.16.16:7890
+    #   - no_proxy=localhost,127.0.0.1
+   
